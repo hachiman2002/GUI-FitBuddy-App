@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantallaPrincipal"
+    android:orientation="vertical">
+
+    <!--Portada parte superior-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fondoMorado"
+        android:orientation="vertical">
+
+        <!--Icono volver atras y logo-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp">
+
+            <ImageButton
+                android:id="@+id/volver_atras"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/btn_volver_atras"></ImageButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/volver_atras"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="10dp"
+                android:text="FitBuddy"
+                android:textColor="@color/letraBlanca"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!--Imagenes-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="435dp"
+                android:layout_height="92dp"
+                android:layout_gravity="bottom"
+                android:rotation="180"
+                android:src="@drawable/imagen_curva2"
+                android:visibility="visible" />
+            <ImageView
+                android:layout_width="212dp"
+                android:layout_height="242dp"
+                android:layout_gravity="center"
+                android:src="@drawable/avatar_hombre" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!--Formulario-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/fondoBlanco">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="52dp">
+
+            <TextView
+                android:id="@+id/id_ejercicios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ejercicios"
+                android:textColor="@color/letraNegra"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/btn_volver_atras"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/id_ejercicios"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="10dp"
+                android:text="Tiempo"
+                android:textColor="@color/letraNegra"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp">
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/letraGris"></CheckBox>
+            <EditText
+                android:id="@+id/edt_nombre_ejercicio"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Nombre ejercicio"
+                android:textColor="@color/letraGris"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/checkbox1"
+                android:layout_toEndOf="@+id/checkbox1"
+                android:layout_marginHorizontal="4dp"></EditText>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="36"
+                android:textColor="@color/letraGris"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/edt_nombre_ejercicio"
+                android:layout_toEndOf="@+id/edt_nombre_ejercicio"
+                android:layout_marginHorizontal="14dp"></EditText>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/letraGris"></CheckBox>
+            <EditText
+                android:id="@+id/edt_nombre_ejercicio2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/checkbox2"
+                android:layout_toEndOf="@+id/checkbox2"
+                android:layout_marginHorizontal="4dp"></EditText>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/edt_nombre_ejercicio2"
+                android:layout_toEndOf="@+id/edt_nombre_ejercicio2"
+                android:layout_marginHorizontal="14dp"></EditText>
+        </RelativeLayout>
+        <!--CardView para el boton-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="@color/fondoMorado"
+            app:cardElevation="0dp">
+
+            <ImageButton
+                android:id="@+id/btn_agregar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:src="@drawable/btn_agregar" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

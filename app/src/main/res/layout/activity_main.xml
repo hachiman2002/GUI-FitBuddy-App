@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fondoMorado"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="FitBuddy"
+            android:textColor="@color/letraBlanca"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="212dp"
+                android:layout_height="265dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_portada1" />
+
+            <ImageView
+                android:src="@drawable/imagen_curva1"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:visibility="visible"
+                android:layout_gravity="bottom|end" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!--SECCION FORMULARIO-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondoBlanco"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/letraGris"
+            android:text="Graciany"
+            android:textColor="@color/letraGris"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peso"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/letraGris"
+            android:text="66"
+            android:textColor="@color/letraGris"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estatura"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/letraGris"
+            android:text="174"
+            android:textColor="@color/letraGris"></EditText>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/checkBoxHombre"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Hombre"
+                android:textColor="@color/letraGris"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/checkBoxMujer"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/checkBoxHombre"
+                android:text="Mujer"
+                android:textColor="@color/letraGris"></CheckBox>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_siguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siguiente"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/letraBlanca"
+            android:backgroundTint="@color/letraMorada"/>
+
+    </LinearLayout>
+</LinearLayout>

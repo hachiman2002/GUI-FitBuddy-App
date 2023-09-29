@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fondoMorado"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp">
+
+            <ImageButton
+                android:id="@+id/volver_atras"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/btn_volver_atras"></ImageButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/volver_atras"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="10dp"
+                android:text="FitBuddy"
+                android:textColor="@color/letraBlanca"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMENZAR"
+            android:layout_gravity="center"
+            android:layout_marginVertical="70dp"
+            android:backgroundTint="@color/fondoBlanco"
+            android:textColor="@color/letraMorada"
+            android:textSize="20dp"></Button>
+        <ImageView
+            android:src="@drawable/imagen_curva1"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:visibility="visible"
+            android:layout_gravity="bottom|end" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/fondoBlanco">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre ejercicio"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginVertical="10dp"
+            android:textColor="@color/letraNegra"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:30s"
+            android:textSize="80dp"
+            android:textColor="@color/letraMorada"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"/>
+        <Button
+            android:id="@+id/btn_pausar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P A U S A R"
+            android:textColor="@color/letraBlanca"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/fondoMorado" />
+    </LinearLayout>
+</LinearLayout>

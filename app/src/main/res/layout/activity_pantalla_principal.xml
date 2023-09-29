@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantallaPrincipal"
+    android:orientation="vertical">
+
+    <!--Portada parte superior-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fondoMorado"
+        android:orientation="vertical">
+
+        <!--Icono volver atras y logo-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp">
+
+            <ImageButton
+                android:id="@+id/volver_atras"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/btn_volver_atras"></ImageButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/volver_atras"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="10dp"
+                android:text="FitBuddy"
+                android:textColor="@color/letraBlanca"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!--Imagenes-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="435dp"
+                android:layout_height="92dp"
+                android:layout_gravity="bottom"
+                android:rotation="180"
+                android:src="@drawable/imagen_curva2"
+                android:visibility="visible" />
+            <ImageView
+                android:layout_width="212dp"
+                android:layout_height="242dp"
+                android:layout_gravity="center"
+                android:src="@drawable/avatar_hombre" />
+        </FrameLayout>
+    </LinearLayout>
+    <!--Portada parte inferior-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/fondoBlanco">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre Persona"
+            android:textColor="@color/letraNegra"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_gravity="center"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peso Ideal: 67KG"
+            android:textColor="@color/letraNegra"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_gravity="center"></TextView>
+        <Button
+            android:id="@+id/btn_crear_rutina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crea tu rutina "
+            android:textColor="@color/letraBlanca"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="@color/fondoMorado"/>
+
+        <!--Cardview para el boton-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="@color/fondoMorado"
+            app:cardElevation="0dp">
+
+            <ImageButton
+                android:id="@+id/btn_comenzar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:src="@drawable/btn_comenzar" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comenzar"
+            android:textColor="@color/letraNegra"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_gravity="center"></TextView>
+        <!--Frase inspiracional-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/texto1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&quot;SI SE CREE Y SE TRABAJA, SE PUEDE&quot;"
+                android:textColor="@color/letraNegra"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/texto2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diego Pablo Simeone"
+                android:textColor="@color/letraNegra"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/texto1" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

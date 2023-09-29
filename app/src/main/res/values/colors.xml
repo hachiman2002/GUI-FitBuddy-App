@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fondoNegro">#FF000000</color>
+    <color name="fondoBlanco">#FFFFFFFF</color>
+    <color name="fondoMorado">#6924C6</color>
+    <color name="fondoGris">#D8D8D8</color>
+
+    <color name="letraBlanca">#FFFFFF</color>
+    <color name="letraGris">#8492A6</color>
+    <color name="letraMorada">#6924C6</color>
+    <color name="letraNegra">#FF000000</color>
+</resources>
